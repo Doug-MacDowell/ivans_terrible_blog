@@ -1,9 +1,10 @@
 <h1>Ivan the Terrible's Blog</h1>
 <%= render "search_form" %>
+<%= paginate @posts %>
 <section class="blog">
   <%= render @posts %>
 </section>
 
+<%= paginate @posts %>
 <br />
-
 <%= link_to 'New Post', new_post_path %>

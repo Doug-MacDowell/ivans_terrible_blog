@@ -2,8 +2,8 @@
   <h2>Post <%= "#{post.id}: #{post.title}" %></h2>
   <div class="post"><%= sanitize post.body %>
     <%= sanitize post.body,
-          tags: %w(table tr td),
-          attributes: %w(id class style) %>
+        tags: %w(table tr td),
+        attributes: %w(id class style) %>
   </div>
   <%= render 'post_nav', post: post %>
   <%#= render post.comments %>
