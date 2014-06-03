@@ -19,7 +19,6 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'pry-rails'
   gem 'pry-doc'
-#  gem 'pry-byebug'
   gem 'hirb'
   gem 'brakeman'
 end
