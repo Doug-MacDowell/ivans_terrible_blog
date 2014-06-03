@@ -7,7 +7,10 @@
 
 <p>
   <b>Body:</b>
-  <%= @post.body %>
+  <%= sanitize @post.body %>
+    <%= sanitize @post.body,
+          tags: %w(table tr td),
+          attributes: %w(id class style) %>
 </p>
 
 

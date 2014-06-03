@@ -2,7 +2,10 @@
 
 <p>
   <b>Body:</b>
-  <%= @reply.body %>
+    <%= sanitize @reply.body %>
+    <%= sanitize @reply.body,
+          tags: %w(table tr td),
+          attributes: %w(id class style) %>
 </p>
 
 <p>
