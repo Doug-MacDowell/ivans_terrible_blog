@@ -13,8 +13,8 @@
   <tr>
     <td><%= sanitize reply.body %>
         <%= sanitize reply.body,
-          tags: %w(table tr td),
-          attributes: %w(id class style) %></td>
+            tags: %w(table tr td),
+            attributes: %w(id class style) %></td>
     <td><%= reply.Comment %></td>
     <td><%= link_to 'Show', reply %></td>
     <td><%= link_to 'Edit', edit_reply_path(reply) %></td>
